@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button} from '../ButtonElements';
+import {Button2} from '../ButtonElements';
 
 import {
   InfoContainer,
@@ -12,10 +12,10 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
+  Img,
 } from './InfoElements';
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, description2}) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -26,14 +26,11 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
+              <Subtitle darkText={darkText}>{description2}</Subtitle>
+              
               <BtnWrap>
-                <Button to="home"
-                smooth={true} 
-                duration={500} 
-                spy={true} 
-                exact='true' 
-                offset={-80}
-                >{buttonLabel}</Button>
+                <Button2 to="/reservenow"
+                >{buttonLabel}</Button2>
               </BtnWrap>
             </TextWrapper>
             </Column1>

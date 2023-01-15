@@ -3,6 +3,7 @@ import {FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll';
 
+
 import {
   Nav, 
   NavbarContainer, 
@@ -11,8 +12,10 @@ import {
   NavMenu, 
   NavItem, 
   NavLinks,
+  NavLinks2,
+  NavLinkss,
   NavBtn,
-  NavBtnLink 
+  NavBtnLink,
 } from './NavbarElements';
 
 const Navbar = ({toggle}) => {
@@ -46,24 +49,24 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks 
-              to='about'
+              <NavLinkss 
+              to='home'
               smooth={true} 
               duration={500} 
               spy={true} 
               exact='true' 
               offset={-80}
               >
-              About</NavLinks>
+              Home</NavLinkss>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover"
+              <NavLinks to="about"
               smooth={true} 
               duration={500} 
               spy={true} 
               exact='true' 
               offset={-80}
-              >Discover</NavLinks>
+              >About</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="services"
@@ -75,17 +78,20 @@ const Navbar = ({toggle}) => {
               >Services</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup"
+              <NavLinks2 to="/petboarding"
               smooth={true} 
               duration={500} 
               spy={true} 
               exact='true' 
-              offset={-80}>Sign Up</NavLinks>
+              offset={-80}>Pet-boarding</NavLinks2>
             </NavItem>
+            
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/reservenow">Reserve Now </NavBtnLink>
+      
           </NavBtn>
+          
         </NavbarContainer>
       </Nav>
       </IconContext.Provider>

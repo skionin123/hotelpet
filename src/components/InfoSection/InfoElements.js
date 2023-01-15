@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({lightBg}) => (lightBg ? 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 0%, rgba(182,182,182,1) 8%, rgba(240,236,231,1) 39%, rgba(238,238,237,1) 62%, rgba(199,199,199,1) 90%, rgba(207,207,207,1) 95%, rgba(184,181,177,1) 100%);' : 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,182,107,1) 0%, rgba(232,184,89,1) 8%, rgba(228,204,167,1) 39%, rgba(228,214,191,1) 62%, rgba(222,165,80,1) 90%, rgba(213,181,139,1) 100%, rgba(240,179,66,1) 100%);')};
@@ -96,3 +97,4 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 `
+

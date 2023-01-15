@@ -16,7 +16,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id: 'discover',
+  id: 'about',
   lightBg: false,
   lightText: false,
   lightTextDesc: true,
@@ -33,19 +33,38 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: 'signup',
+  id: 'sign-up',
   lightBg: true,
   lightText: false,
   lightTextDesc: true,
   topLine: 'Family Pet',
-  headline: 'LOREM LOREM',
-  description: 'LOREM LOREM LOREM LOREM LOREM LOREM',
-  buttonLabel: 'LOREM',
+  headline: 'Pet Boarding',
+  description: 'Our pet boarding service is now open for reservations!',
+  buttonLabel: 'Reserve Now',
   imgStart: false,
-  img: require('../../images/cute-jack-russell-dog-with-smiling-face-lies-yellow-background-place-your-text_78949-755.webp'),
+  img: require('../../images/NCJ BOARDING.jpg'),
   alt: 'pets',
   dark: true,
   primary: true,
   darkText: true
 };
+
+export const homeObjFour = {
+  id: 'sign-up',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: 'Family Pet',
+  headline: 'Pet Boarding',
+  description: 'Our pet boarding service is now open for reservations!',
+  buttonLabel: 'Reserve Now',
+  imgStart: false,
+  img: require('../../images/NCJ BOARDING.jpg'),
+  alt: 'pets',
+  dark: true,
+  primary: true,
+  darkText: true
+};
+
+
 
