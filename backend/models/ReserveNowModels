@@ -1,0 +1,43 @@
+const mongoose = require('mongoose')
+
+const reserveNowTemplate =  new mongoose.Schema({
+  fullName:{
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  petName: {
+    type: String,
+    required: true
+  },
+  kindOfPet: {
+    type: String,
+    required: true
+  },
+  petWeight: {
+    type: String,
+    required: true
+  },
+  petSize: {
+    type: String,
+    required: true
+  },
+  startDate: {
+    type: Date,
+    required: true
+  },
+  endDate: {
+    type: Date,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  }
+
+})
+
+module.exports = mongoose.model('mytable', reserveNowTemplate)

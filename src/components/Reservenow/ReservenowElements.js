@@ -2,24 +2,17 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
-  min-height: 692px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
   background-image: url(${require(`../../images/pets.png`)});
   background-size: cover;
+  width: 100%;
 `
 
 export const FormWrap = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -100px;
+  margin-top: -80px;
+  width: 100%;
 
   @media screen and (max-width: 400px) {
     height: 80%;
@@ -45,7 +38,7 @@ export const FormContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  width: 100%;
 
   @media screen and (max-width: 480px) {
     padding: 10px;
@@ -54,7 +47,7 @@ export const FormContent = styled.div`
 
 export const Form = styled.form`
   background: #020024;
-  width: 65%;
+  width: 80%;
   height: auto;
   z-index: 1;
   display: grid;
@@ -65,7 +58,17 @@ export const Form = styled.form`
 
   @media screen and (max-width: 400px) {
     padding: 32px 32px;
+    width: 100%;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 100px) {
+    width: 100%;
+  }
+ 
 `
 
 export const FormH1 = styled.h1`
@@ -74,6 +77,12 @@ export const FormH1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+    text-align: justify;
+  }
+
 `
 
 export const FormLabel = styled.label`
@@ -81,6 +90,17 @@ export const FormLabel = styled.label`
   font-size: 14px;
   color: #fff;
 `
+
+export const FormLabelSize = styled.label`
+  margin-bottom: 8px;
+  line-height: 30px;
+  height: 30px;
+  font-size: 14px;
+  color: #fff;
+
+  margin-bottom: 20px;
+`
+
 
 export const FormInput = styled.input`
   padding: 16px 16px;

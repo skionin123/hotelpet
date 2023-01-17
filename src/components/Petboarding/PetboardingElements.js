@@ -10,5 +10,4 @@ export const ContainerH1 = styled.h1`
 color: #fff;
 font-size: 20px;
 font-weight: 400;
-
 `
